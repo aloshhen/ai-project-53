@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+  }
+}
+
+@layer components {
+  .glass {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(to right, #8B4513, #A0522D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
